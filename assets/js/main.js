@@ -16,13 +16,13 @@ var yourDiscount;
 var fullCost;
 var discountedCost;
 var ticketCostGgeneretor;
-const costOfKilometer = 0.21;
+var costOfKilometer = 0.21;
 
 //Input Utente
-numberOfKilometers = prompt("Esprimi la validità di percorrenza del titolo di viaggio in chilometri");
+numberOfKilometers = Number(prompt("Esprimi la validità di percorrenza del titolo di viaggio in chilometri"));
 console.log(numberOfKilometers);
 
-yourAge = prompt("Quanti anni hai?");
+yourAge = Number(prompt("Quanti anni hai?"));
 console.log(yourAge);
 
 //Base operetion
@@ -35,10 +35,12 @@ if (yourAge < 18 ) {
     console.log(yourDiscount);
 
 } else if (yourAge > 65) {
+
     yourDiscount = 0.4;
     console.log(yourDiscount);
 
 } else {
+
     yourDiscount = 0;
     console.log(yourDiscount);
 }
@@ -48,3 +50,12 @@ if (yourAge < 18 ) {
 //return info
 yourTotalCost =  fullCost * ( 1 - yourDiscount);
 console.log(yourTotalCost);
+
+
+document.getElementById("total_cost").innerHTML = yourTotalCost + " \u20AC";
+
+document.getElementById("full_cost").innerHTML = fullCost + " \u20AC";
+
+document.getElementById("discount").innerHTML = yourDiscount * 100 + " \u0025";
+
+
