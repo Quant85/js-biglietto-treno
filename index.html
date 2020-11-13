@@ -8,20 +8,23 @@
 </head>
     <body>
         <main id="main_ticket_cost">
-            <div id="box_cost_generetor" class="d-flex ">
+            <div id="box_cost_generetor" class="d-flex">
                 <h1 id="title">
                     Verifica il costo del tuo biglietto
                 </h1>
                 <button class="btn-wide" onclick="ticketCostGgeneretor()">Cost</button>
-                <h2>Prezzo intero</h2>
-                <h3 id="full_cost"></h3>
-                <!-- /#prezzo_int -->
-                <h2>Sconto applicato</h2>
-                <h3 id="discount"></h3>
-                <!-- /#scont -->
-                <h2>Costo Biglietto</h2>
-                <h3 id="total_cost"></h3>
-                <!-- /#Cost_scont -->
+                <div class="results">
+                    <h4>Prezzo intero</h4>
+                    <span id="full_cost"></span>
+                    <!-- /#prezzo_int -->
+                    <h4>Sconto applicato</h4>
+                    <span id="discount"></span>
+                    <!-- /#scont -->
+                    <h4>Costo Biglietto</h4>
+                    <span id="total_cost"></span>
+                    <!-- /#Cost_scont -->
+                </div>
+                <!-- /.results -->
                 
             </div>
             <!-- /#box_password_generetor -->
