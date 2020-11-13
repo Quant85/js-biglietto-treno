@@ -32,6 +32,7 @@ body {
     3px 3px 7px #aaaaaa;
     padding: 20px;
     border-radius: 10px;
+    flex-flow: column wrap;
 }
 
 h1 {
@@ -57,7 +58,7 @@ h1 {
 }
 
 .results {
-    text-align: start;
+    text-align: center;
 }
 
 h4{

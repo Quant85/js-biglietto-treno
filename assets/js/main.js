@@ -23,37 +23,38 @@ function ticketCostGgeneretor() {
 
     //Input Utente
     numberOfKilometers = Number(prompt("Esprimi la validità di percorrenza del titolo di viaggio in chilometri"));
-    console.log(numberOfKilometers);
+    //console.log(numberOfKilometers);
     
     yourAge = Number(prompt("Quanti anni hai?"));
-    console.log(yourAge);
+    //console.log(yourAge);
     
     //Base operetion
     fullCost = costOfKilometer * numberOfKilometers;
-    console.log(fullCost);
+    //console.log(fullCost);
     
     if (yourAge < 18 ) {
     
         yourDiscount = 0.2;
-        console.log(yourDiscount);
+        //console.log(yourDiscount);
     
     } else if (yourAge > 65) {
     
         yourDiscount = 0.4;
-        console.log(yourDiscount);
+        //console.log(yourDiscount);
     
     } else {
     
         yourDiscount = 0;
-        console.log(yourDiscount);
+        //console.log(yourDiscount);
     }
     
     //conditional operations
     
-    //return info
-    yourTotalCost =  fullCost * ( 1 - yourDiscount);
-    console.log(yourTotalCost);
     
+    yourTotalCost =  fullCost * ( 1 - yourDiscount);
+    //console.log(yourTotalCost);
+    
+    //return info
     
     document.getElementById("total_cost").innerHTML = yourTotalCost.toFixed(2) + " \u20AC";
     
