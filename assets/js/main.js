@@ -52,10 +52,10 @@ yourTotalCost =  fullCost * ( 1 - yourDiscount);
 console.log(yourTotalCost);
 
 
-document.getElementById("total_cost").innerHTML = yourTotalCost + " \u20AC";
+document.getElementById("total_cost").innerHTML = yourTotalCost.toFixed(2) + " \u20AC";
 
-document.getElementById("full_cost").innerHTML = fullCost + " \u20AC";
+document.getElementById("full_cost").innerHTML = fullCost.toFixed(2) + " \u20AC";
 
-document.getElementById("discount").innerHTML = yourDiscount * 100 + " \u0025";
+document.getElementById("discount").innerHTML = yourDiscount.toFixed(2) * 100 + " \u0025";
 
 
