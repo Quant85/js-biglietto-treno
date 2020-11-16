@@ -31,6 +31,13 @@ function ticketCostGgeneretor() {
     //Base operetion
     fullCost = costOfKilometer * numberOfKilometers;
     //console.log(fullCost);
+
+    if (isNaN(numberOfKilometers) || isNaN(yourAge)) {
+        alert("Informazioni non conforme!")
+        yourDiscount = 0;
+        fullCost = 0;
+        yourTotalCost = 0;
+    }
     
     if (yourAge < 18 ) {
     
